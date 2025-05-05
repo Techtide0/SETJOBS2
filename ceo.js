@@ -1,4 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
 import {
   getFirestore,
   doc,
@@ -8,12 +8,12 @@ import {
 
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAOkJP8oimGChOhcKmyGU-PepgHlKMLZeI",
-  authDomain: "ceo-database-7aebb.firebaseapp.com",
-  projectId: "ceo-database-7aebb",
-  storageBucket: "ceo-database-7aebb.firebasestorage.app",
-  messagingSenderId: "624837365691",
-  appId: "1:624837365691:web:7dfdfe1cfc7a7696407e9e",
+    apiKey: "AIzaSyAvHVc-TRxNXyyAwmlpPn7agRpqwGdASfc",
+    authDomain: "setjob-23717.firebaseapp.com",
+    projectId: "setjob-23717",
+    storageBucket: "setjob-23717.firebasestorage.app",
+    messagingSenderId: "307680673058",
+    appId: "1:307680673058:web:a907324888bae733cfb97b"
 };
 
 // Initialize Firebase
@@ -45,7 +45,7 @@ async function saveOrUpdateCEOAndDomain(
         const domain = email.split("@")[1]; // Extract domain
 
         if (!ceoName) {
-          ceoName = "Unknown CEO"; // Default if no CEO name is found
+          ceoName = " "; // Default if no CEO name is found
         }
 
         // Save to Firestore
